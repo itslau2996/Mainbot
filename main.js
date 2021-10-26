@@ -20,7 +20,7 @@ for(const file of commandfiles){
 	client.commands.set(command.name, command)
 }
 client.on('ready', () => {
-	console.log('Bot: Hosting ' + `${client.users.size}` + ' users, in ' + `${client.channels.size}` + ' channels of ' + `${client.guilds.size}` + ' guilds.');
+	console.log('Bot: Hosting in ' + `${client.channels.cache.size}` + ' channels of ' + `${client.guilds.cache.size}` + ' guilds.');
 		client.user.setStatus('online')
 		client.user.setPresence({
 			game: {
