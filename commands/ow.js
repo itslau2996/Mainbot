@@ -45,7 +45,7 @@ module.exports = {
     "#70 Waar ben je het meest trots op in je leven?",
     "#71 Zijn je doelen en prioriteiten veranderd naarmate je ouder bent geworden?"]
     if (talkedRecently.has(message.author.id)) {
-        message.channel.send("calm down, wacht nog 10 minuten met dit command uitvoeren- " + `${message.author}`);
+        message.channel.send(`calm down, wacht nog 10 minuten met dit command uitvoeren- ` + `${message.author}`);
         } else {
             const randomMessage = messages[Math.floor(Math.random() * messages.length)];
             message.channel.send(randomMessage)  
