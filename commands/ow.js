@@ -44,7 +44,6 @@ module.exports = {
     "#69 *nice* Wat voor een huis wil je later bezitten?",
     "#70 Waar ben je het meest trots op in je leven?",
     "#71 Zijn je doelen en prioriteiten veranderd naarmate je ouder bent geworden?",
-    "#72 Wat beschouw je als de grofste gewoonte die sommige mensen hebben?", "#73 Ben je georganiseerd in je privéleven of aardig rommelig?"
 ]
     if (talkedRecently.has(message.author.id)) {
         message.channel.send(`calm down, wacht nog 10 minuten met dit command uitvoeren- ` + `${message.author}`);
