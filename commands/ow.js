@@ -5,7 +5,7 @@ module.exports = {
     execute(message, args){
         const messages = ["#1 Welk seizoen vind jij het leukst?", "#2 Wat is jouw favoriete LOG seizoen?", "#3 Wat is jouw favoriete tijd van je leven?", "#4 Wat doe jij het liefst 's avonds?", "#5 Hoe zou jij je kind noemen en waarom?",
     "#6 Wat zou jij graag nog een keer doen in jouw leven?", "#7 Welk land wil jij nog heel graag bezoeken?", "#8 Welk vak haat je het meest en waarom?"
-    , "#9 Hoe vaak ben je nog na 01.00 uur wakker?", "Wat beschouw je als de grofste gewoonte die sommige mensen hebben?", "Ben je georganiseerd in je privéleven of aardig rommelig?",
+    , "#9 Hoe vaak ben je nog na 01.00 uur wakker?", "#72 Wat beschouw je als de grofste gewoonte die sommige mensen hebben?", "#73 Ben je georganiseerd in je privéleven of aardig rommelig?",
     "#10 Ben je wel eens bang in het donker?", "#11 Wat staat bovenaan je bucketlist?", "#12 Wat waren je favoriete televisieshows toen je jong was?", "#13 Ben je ooit in echt gevaar geweest?", "#15 Wat zou je liever hebben; een droomauto of een geweldig huis?", 
     "#16 Wat is je “guilty pleasure” als je kan ontspannen?",  "#17 Wie is de persoon in je leven die je het gelukkigst maakt?", "#18 Als je gestrest bent, wat doe je dan om te ontspannen?",  
     "#19 Als je een nieuwe voornaam zou mogen kiezen, wat zou het dan worden?",  "#20 Als je een periode in je leven opnieuw zou kunnen doen, wat kies je dan? #21 Waar breng je gedurende de dag de meeste tijd door?", 
