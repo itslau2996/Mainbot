@@ -2,6 +2,8 @@ const Discord = require('discord.js')
 const { Client, Intents } = require('discord.js');
 const { token } = require('./config.json');
 const Messages = require("discord-messages");
+const { Permissions } = require('discord.js');
+
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, 'GUILD_MESSAGES'] });
 
@@ -45,7 +47,11 @@ client.on('messageCreate', message =>{
 		client.commands.get('ow').execute(message, args);
 	} else if(command === 'invite'){
 		client.commands.get('invite').execute(message, args);
+	} else if(command === 'report'){
+		client.commands.get('report').execute(message, args);
 	}
+	
+	
 
 
 });

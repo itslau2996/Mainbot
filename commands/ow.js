@@ -1,3 +1,4 @@
+
 const talkedRecently = new Set();
 module.exports = {
     name: 'ow',
@@ -45,21 +46,17 @@ module.exports = {
     "#70 Waar ben je het meest trots op in je leven?",
     "#71 Zijn je doelen en prioriteiten veranderd naarmate je ouder bent geworden?",
 ]
-    if (talkedRecently.has(message.author.id)) {
+
+    if (talkedRecently.has(message.author.id)){
         message.channel.send(`calm down, wacht nog 10 minuten met dit command uitvoeren- ` + `${message.author}`);
         } else {
             const randomMessage = messages[Math.floor(Math.random() * messages.length)];
-            message.channel.send(randomMessage)  
-       // the user can type the command ... your command code goes here :)
+            message.channel.send(randomMessage)
 
-    // Adds the user to the set so that they can't talk for a minute
-    talkedRecently.add(message.author.id);
-    setTimeout(() => {
-      // Removes the user from the set after 10 minutes
-      talkedRecently.delete(message.author.id);
-    }, 600000);
-}
-
-       
+            talkedRecently.add(message.author.id);
+            setTimeout(() => {
+                talkedRecently.delete(message.author.id);
+            }, 600000);
     }
+}
 }
