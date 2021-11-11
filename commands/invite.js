@@ -15,8 +15,7 @@ module.exports = {
             },
         ],
         footer: {
-            text: 'Some footer text here',
-            icon_url: '<https://discord.gg/xF7C3Cf37j>',
+            text: '<https://discord.gg/xF7C3Cf37j>',
         },
         }
     }
