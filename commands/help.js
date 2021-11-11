@@ -37,7 +37,12 @@ module.exports = {
                     value: 'Report fouten door de support server te joinen!',
                     inline: true,
                 },
-            ]
+                {
+                    name: '-quote',
+                    value: 'get a random quote, deze kan je zelf insturen via de support server!',
+                    inline: true,
+                },
+                ]
         }
         message.channel.send({ embeds: [HelpEmbed] }); 
     }
