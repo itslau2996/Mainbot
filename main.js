@@ -50,7 +50,7 @@ client.on('messageCreate', message =>{
 	} else if(command === 'report'){
 		client.commands.get('report').execute(message, args);
 	} else if(command === 'quote')
-		client.commands.get('quote').execute(message, args);
+		client.commands.get('quotes').execute(message, args);
 	
 
 
