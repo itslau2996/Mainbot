@@ -1,9 +1,20 @@
-const talkedRecently = new Set();
+const askedForQuote = new Set();
 module.exports = {
-    name: 'ow',
-    description: 'this is a ping command!',
+    name: 'quotes',
+    description: 'quotes',
     execute(message, args){
         const messages = []
-        message.channel.send(`coming soon`)
+        if (askedForQuote.has(message.author.id)){
+            message.channel.send(`wacht nog 10 minuten tot je dit kan doen - ` + `${message.author}`);
+            } else {
+                const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+                message.channel.send(randomMessage)
+    
+                askedForQuote.add(message.author.id);
+                setTimeout(() => {
+                    askedForQuote.delete(message.author.id);
+                }, 600000);
+            }
     }
 }
+    
