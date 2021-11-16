@@ -49,8 +49,9 @@ client.on('messageCreate', message =>{
 		client.commands.get('invite').execute(message, args);
 	} else if(command === 'report'){
 		client.commands.get('report').execute(message, args);
+	} else if(command === 'quote'){
+		client.commands.get('quotes').execute(message, args);
 	}
-	
 	
 
 
