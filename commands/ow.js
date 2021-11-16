@@ -48,7 +48,7 @@ module.exports = {
 ]
 
     if (talkedRecently.has(message.author.id)){
-        message.channel.send(`calm down, wacht nog 10 minuten met dit command uitvoeren- ` + `${message.author}`);
+        message.channel.send(`calm down, wacht nog 1 minuten met dit command uitvoeren- ` + `${message.author}`);
         } else {
             const randomMessage = messages[Math.floor(Math.random() * messages.length)];
             message.channel.send(randomMessage)
@@ -56,7 +56,7 @@ module.exports = {
             talkedRecently.add(message.author.id);
             setTimeout(() => {
                 talkedRecently.delete(message.author.id);
-            }, 600000);
+            }, 60000);
     }
 }
 }
