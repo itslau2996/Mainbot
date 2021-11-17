@@ -3,7 +3,7 @@ module.exports = {
     name: 'quotes',
     description: 'quotes',
     execute(message, args){
-        const messages = []
+        const messages = ["send quotes in via the support server! <https://discord.gg/zVp77HTPFK> ", "send quotes in via the support server! <https://discord.gg/zVp77HTPFK>"]
         if (askedForQuote.has(message.author.id)){
             message.channel.send(`wacht nog 20 sec je dit kan doen - ` + `${message.author}`);
             } else {
