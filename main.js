@@ -23,14 +23,9 @@ for(const file of commandfiles){
 }
 client.on('ready', () => {
 	console.log('Bot: Hosting in ' + `${client.channels.cache.size}` + ' channels of ' + `${client.guilds.cache.size}` + ' guilds.');
-		client.user.setStatus('online')
 		client.user.setPresence({
-			game: {
-				name: 'Use -help',
-				type: "Playing",
-				url: "https://discordapp.com/"
-			}
-		});
+			status: 'online'
+		})
 	});
 
 client.on('messageCreate', message =>{
