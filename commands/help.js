@@ -4,42 +4,37 @@ module.exports = {
     execute(message, args){
             const HelpEmbed = {
             color: 0x0099ff,
-            title: 'HELP',
+            title: 'Commands',
             url: 'https://discord.gg/xF7C3Cf37j',
 
             fields: [
                 {
                     name: 'Mijn commands',
-                    value: 'Het prefix is -, voor meer help. Nog steeds vast? Join de support server door te klikken op de titel.',
+                    value: `The prefix is '-' ,if you need more help join the support server using the link-title, or dm me <@642288908381585408>`
                 },
                 {
                     name: '-Help',
-                    value: 'Dit command.',
+                    value: 'This command.',
                     inline: true,
                 },
                 {
                     name: '-Invite',
-                    value: 'Coming soon',
+                    value: 'Get the bot invite link',
                     inline: true,
                 },
                 {
                     name: '-ow',
-                    value: 'Krijg een random onderwerp om over te praten!',
+                    value: 'get a random subject to talk about!',
                     inline: true,                              
                 },
                 {
-                    name: '-ping',
-                    value: 'makkelijkste om te kijken of de bot online is!',
-                    inline: true,
-                },
-                {
                     name: '-report',
-                    value: 'Report fouten door de support server te joinen!',
+                    value: 'Report mistakes by joining the support-server!',
                     inline: true,
                 },
                 {
                     name: '-quote',
-                    value: 'get a random quote, deze kan je zelf insturen via de support server!',
+                    value: 'get a random quote. You can send these in using the support-server!',
                     inline: true,
                 },
                 ]

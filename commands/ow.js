@@ -48,7 +48,7 @@ module.exports = {
 ]
 
     if (talkedRecently.has(message.author.id)){
-        message.channel.send(`calm down, wacht nog 1 minuten met dit command uitvoeren- ` + `${message.author}`);
+        message.channel.send(`wait another minute before you can do this - ` + `${message.author}`);
         } else {
             const randomMessage = messages[Math.floor(Math.random() * messages.length)];
             message.channel.send(randomMessage)

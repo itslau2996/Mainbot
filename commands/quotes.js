@@ -5,7 +5,7 @@ module.exports = {
     execute(message, args){
         const messages = ["send quotes in via the support server! <https://discord.gg/zVp77HTPFK> ", "send quotes in via the support server! <https://discord.gg/zVp77HTPFK>"]
         if (askedForQuote.has(message.author.id)){
-            message.channel.send(`wacht nog 20 sec je dit kan doen - ` + `${message.author}`);
+            message.channel.send(`wait another 20 seconds before you can do this - ` + `${message.author}`);
             } else {
                 const randomMessage = messages[Math.floor(Math.random() * messages.length)];
                 message.channel.send(randomMessage)
