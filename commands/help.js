@@ -24,7 +24,7 @@ module.exports = {
                 },
                 {
                     name: '-ow',
-                    value: 'get a random subject to talk about!',
+                    value: 'get a random topic to talk about!',
                     inline: true,                              
                 },
                 {
