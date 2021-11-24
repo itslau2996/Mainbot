@@ -1,29 +1,29 @@
 
 const talkedRecently = new Set();
 module.exports = {
-    name: 'ow',
-    description: 'this is a ping command!',
+    name:   'topic',
+    description: 'this is a topic command!',
     execute(message, args){
-        const messages = ["#1 Welk seizoen vind jij het leukst?", "#2 Wat is jouw favoriete LOG seizoen?", "#3 Wat is jouw favoriete tijd van je leven?", "#4 Wat doe jij het liefst 's avonds?", "#5 Hoe zou jij je kind noemen en waarom?",
-    "#6 Wat zou jij graag nog een keer doen in jouw leven?", "#7 Welk land wil jij nog heel graag bezoeken?", "#8 Welk vak haat je het meest en waarom?"
-    , "#9 Hoe vaak ben je nog na 01.00 uur wakker?", 
-    "#10 Ben je wel eens bang in het donker?", "#11 Wat staat bovenaan je bucketlist?", "#12 Wat waren je favoriete televisieshows toen je jong was?", "#13 Ben je ooit in echt gevaar geweest?", "#15 Wat zou je liever hebben; een droomauto of een geweldig huis?", 
-    "#16 Wat is je “guilty pleasure” als je kan ontspannen?",  "#17 Wie is de persoon in je leven die je het gelukkigst maakt?", "#18 Als je gestrest bent, wat doe je dan om te ontspannen?",  
-    "#19 Als je een nieuwe voornaam zou mogen kiezen, wat zou het dan worden?",  "#20 Als je een periode in je leven opnieuw zou kunnen doen, wat kies je dan? #21 Waar breng je gedurende de dag de meeste tijd door?", 
-    "#22 Wat is de gekste droom die je ooit hebt gehad?", "#22 Is er iets gebeurd in je leven dat niet te verklaren valt?", "#23 Wie heeft een belangrijke rol gespeeld in hoe jij nu bent?", 
-    "#24 Wat is de mooiste plek die je ooit hebt bezocht?",  "#25 Waar ben je geweest op je laatste vakantie?",  "#26 Wat vind je leuk aan je werk/school?", 
-    "#27 Wie is je favoriete artiest?", "#28 Ben je graag actief als je vrij bent of wil je dan ontspannen?",
-    "#29 Ben je nog steeds vrienden met een basisschoolvrienden?", "#30 Kun je zonder problemen een toespraak voor een groep houden?",
-    "#31 Wat is het enige waar je de beste in bent?", "#32 Waar hang je het liefst in je huis rond?",
-    "#33 Houd je van reality-tv?", "#34 Hoe voel je je over huisdieren?",
-    "#35 Wat was het laatste project waar je je voor 100% hebt ingezet om het zo goed mogelijk af te maken?", "#36 Wat is je favoriete bezit?" ,
-    "#37 Welke drie woorden beschrijven jou het beste?", "#38 Wie bewonder je?", "#39 Wat is je meest nutteloze talent?",
-    "#40 Wat is het beste cadeau dat je ooit op je verjaardag hebt gekregen?", "#42 Als je zelf een bedrijf zou starten, wat zou je dan beginnen?"
-    ,"#43 Wat is je favoriete manier om je tijd te verdoen?", "#44 Wat zou je je tegen je jongere zelf zeggen",
-    "#45 Hoe ziet je perfecte weekend eruit?", "#46 Welk soort nieuws volg je dagelijks?",
-    "#47 Als je kon kiezen om onsterfelijk te zijn, zou je het dan willen?", "#48 Wat voor soort dier zou je zijn als je een dier zou kunnen zijn?"
-    ," #49 Zou je liever in staat zijn om als een vogel te vliegen of onder water te ademen als een vis?",
-    , "#50 Zou je liever het vermogen hebben om te vliegen of om gedachten te lezen?",
+        const messages = ["#1 Which season do you like the most", "#2 Whats your favorite MCC?", "#3 What is your favorite moment of your life", "#4 How do you wanna name your kid?",
+    "#5 What is something you really want to do in your life?", "#6 Which country you would like to visit once?", "#7 Which subject do you hate and why?"
+    , "#8 How often are you awake after 01:00?", 
+    "#9 Are you afraid of the dark?", "#10 Have you ever been in real danger?", 
+    "#10 What do you do to relax? ",  "#11 Who is the person that makes you the happiest?", "#12 If you're stressed, what is that one thing you do to relax?",  
+    "#13 If you had too chance your name, what would it chance too?",  "#14 What period in your life you want to do again?", "#15 Where do you spend the most time in your house?", 
+    "#22 What is the weirdesst dream you ever had?", "#22 What is something you would like to chance about yourself?", "#23 Who has the most influence in your life?", 
+    "#24 What is the place you like the most?",  "#25 Where did you go on your last vacation?",  "#26 What do you like the most about work/school?", 
+    "#27 Who's your favorite artist?", "#28 ?",
+    "#30 Are u able to present to big groups?",
+    "#31 What is that one thing that you're really good at?", "#32 What is your favorite place in your house?",
+    ,"#34 Do you like pets?",
+    "#35 What is the last project you put the most time in?", "#36 What is your favorite possesion?" ,
+    "#37 Which three words describe you the best?", "#39 What is your biggest talent?",
+    "#40 What is the best present you ever had on a birthday?", "#42 If you had to start a company, what would it do?"
+    ,"#43 What do you like to do to spend your time?", "#44 What would you say to your younger self?",
+    "#45 How does your favorite weekend look like?", "#46 Which sort of news do you follow daily?",
+    "#47 If you could choose to be immortal, would you do that?", "#48 What kind of animal are you?"
+    ," #49 Would you rather be able to fly like a bird or be able to swim like a fish?",
+    , "#50 Would you rather have the ability to read minds or the ability to fly?",
     "#51 Denk je dat mensen ooit iets zullen uitvinden dat tijdreizen mogelijk maakt?",
     "52 Wat is volgens jou de grootste uitvinding in de komende 5 jaar?",
     "#53 Denk je dat technologie onze levens beter of slechter maakt?",

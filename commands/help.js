@@ -9,7 +9,7 @@ module.exports = {
 
             fields: [
                 {
-                    name: 'Mijn commands',
+                    name: 'My Commands',
                     value: `The prefix is '-' ,if you need more help join the support server using the link-title, or dm me <@642288908381585408>`
                 },
                 {
@@ -23,7 +23,7 @@ module.exports = {
                     inline: true,
                 },
                 {
-                    name: '-ow',
+                    name: '-ow or -topic',
                     value: 'get a random topic to talk about!',
                     inline: true,                              
                 },
