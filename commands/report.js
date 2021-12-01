@@ -6,13 +6,13 @@ module.exports = {
     execute(message, args){
         const exampleEmbed = {
             color: 0x0099ff,
-            title: 'Reports',
+            title: 'Report',
             url: 'https://discord.gg/xF7C3Cf37j',
             fields: [
                 {
                     name: `Report`,
-                    value: `Report [hier](https://discord.gg/xF7C3Cf37j)
-                    werkt de link niet? MSG <@642288908381585408>`,
+                    value: `Report [here](https://discord.gg/xF7C3Cf37j)
+                    if that didnt work, MSG <@642288908381585408>`,
                 },
             ]
             
