@@ -23,9 +23,9 @@ for(const file of commandfiles){
 }
 client.on('ready', () => {
 	console.log('Bot: Hosting in ' + `${client.channels.cache.size}` + ' channels of ' + `${client.guilds.cache.size}` + ' guilds.');
-		client.user.setPresence({
-			status: 'online'
-		})
+	client.user.setStatus('dnd');
+	client.user.setPresence({ activities: [{ name: `Hosting in ${client.channels.cache.size} channels of ${client.guilds.cache.size} guilds.` }] });
+
 	});
 
 client.on('messageCreate', message =>{
