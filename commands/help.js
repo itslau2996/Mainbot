@@ -23,8 +23,8 @@ module.exports = {
                     inline: true,
                 },
                 {
-                    name: '-ow or -topic',
-                    value: 'get a random topic to talk about!',
+                    name: '-ow',
+                    value: 'Get a *dutch* topic to talk about',
                     inline: true,                              
                 },
                 {
@@ -35,6 +35,11 @@ module.exports = {
                 {
                     name: '-quote',
                     value: 'get a random quote. You can send these in using the support-server!',
+                    inline: true,
+                },
+                {
+                    name: '-topic',
+                    value: 'get a random *english* topic to talk about!',
                     inline: true,
                 },
                 ]

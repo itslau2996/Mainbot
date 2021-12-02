@@ -47,7 +47,7 @@ client.on('messageCreate', message =>{
 	} else if(command === 'quote'){
 		client.commands.get('quotes').execute(message, args);
 	} else if(command === 'topic'){
-		client.commands.get('ow').execute(message, args); 
+		client.commands.get('topic').execute(message, args); 
 	}
 	
 
