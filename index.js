@@ -3,7 +3,6 @@ const { Client, Intents } = require('discord.js');
 const { token } = require('./config.json');
 const Messages = require("discord-messages");
 const { Permissions } = require('discord.js');
-const { status } = require('./status.js');
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, 'GUILD_MESSAGES'] });
 
@@ -23,7 +22,9 @@ for(const file of commandfiles){
 }
 client.on('ready', () => {
 	console.log('Bot: Hosting in ' + `${client.channels.cache.size}` + ' channels of ' + `${client.guilds.cache.size}` + ' guilds.');
-	client.get(status)
+	client.user.setPresence({ activities: [{ name: `Hosting in ${client.channels.cache.size} channels of ${client.guilds.cache.size} guilds.` }] });
+	function Status() {client.user.setPresence({ activities: [{ name: `Hosting in ${client.channels.cache.size} channels of ${client.guilds.cache.size} guilds.` }] });}
+    setInterval(Status, 600000);
 	});
 	
 

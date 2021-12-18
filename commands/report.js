@@ -1,5 +1,3 @@
-const { channelMention } = require("@discordjs/builders")
-
 module.exports = {
     name: 'report',
     description: 'this is a report command!',
