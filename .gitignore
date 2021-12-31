@@ -1,4 +1,5 @@
 
 **/config.json
 **/Theezakje status.crp
-.vscode/settings.json
+.vscode/**
+**/.env
