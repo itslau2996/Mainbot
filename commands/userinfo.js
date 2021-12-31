@@ -9,7 +9,7 @@ module.exports = {
         const Member = message.guild.members.cache.get(message.author.id)
 
         const Respsonse = new Discord.MessageEmbed()
-            .setAuthor(`${Target.username}`, Target.displayAvatarURL({dynamic: true}))
+            .setAuthor({name: `${Target.username}`, iconURL: Target.displayAvatarURL({dynamic: true}), url: 'https://discord.gg/xF7C3Cf37j'})
             .setThumbnail(Target.displayAvatarURL({dynamic: true}))
             .addFields(
                 { name: 'UserID', value: `${Target.id}`, inline: false },
