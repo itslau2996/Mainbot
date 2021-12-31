@@ -3,7 +3,7 @@ const talkedRecently = new Set();
 module.exports = {
     name:   'topic',
     description: 'this is a topic command!',
-    execute(message, args){
+    execute(client, message, args, Discord){
         const messages = ["#1 Which season do you like the most", "#2 Whats your favorite MCC?", "#3 What is your favorite moment of your life", "#4 How do you wanna name your kid?",
     "#5 What is something you really want to do in your life?", "#6 Which country you would like to visit once?", "#7 Which subject do you hate and why?"
     , "#8 How often are you awake after 01:00?", 

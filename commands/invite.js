@@ -1,7 +1,7 @@
 module.exports = {
     name: 'invite',
     description: 'this is a invite command!',
-    execute(message, args){
+    execute(client, message, args, Discord){
         const InviteEmbed = {
         color: 0x0099ff,
         title: 'invite the bot',
@@ -10,13 +10,14 @@ module.exports = {
         fields: [
             {
             name: 'help',
-            value: `if the link doesn't work, dm <@642288908381585408>`,
+            value: `if the link doesn't work, join the supportserver`,
             inline: true
             },
         ],
         footer: {
-            text: '<https://discord.gg/xF7C3Cf37j>',
+            text: 'https://discord.gg/xF7C3Cf37j',
         },
         }
-    }
+    message.channel.send({ embeds: [InviteEmbed] });}
+    
 }

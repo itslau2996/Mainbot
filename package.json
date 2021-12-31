@@ -1,6 +1,6 @@
 {
-  "name": "discordbot",
-  "version": "1.0.0",
+  "name": "theezakje",
+  "version": "2.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,10 +13,20 @@
     "discord-api-types": "^0.23.1",
     "discord-messages": "^1.0.2",
     "discord.js": "^13.2.0",
-    "git": "^0.1.5"
+    "dotenv": "^10.0.0",
+    "git": "^0.1.3",
+    "moment": "^2.29.1"
   },
-  "description": "",
+  "description": "Please do not use this as a base for your code, this is my first Javascript project",
   "devDependencies": {
     "eslint": "^8.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itslau2996/Mainbot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/itslau2996/Mainbot/issues"
+  },
+  "homepage": "https://github.com/itslau2996/Mainbot#readme"
 }

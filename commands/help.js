@@ -1,7 +1,8 @@
+const Discord = require('discord.js')
 module.exports = {
     name: 'help',
     description: 'this is a help command!',
-    execute(message, args){
+    execute(client, message, args, Discord){
             const HelpEmbed = {
             color: 0x0099ff,
             title: 'Commands',
@@ -33,13 +34,13 @@ module.exports = {
                     inline: true,
                 },
                 {
-                    name: '-quote',
-                    value: 'get a random quote. You can send these in using the support-server!',
+                    name: '-topic',
+                    value: 'get a random *english* topic to talk about!',
                     inline: true,
                 },
                 {
-                    name: '-topic',
-                    value: 'get a random *english* topic to talk about!',
+                    name: '-userinfo',
+                    value: 'Get your own information about your profile!',
                     inline: true,
                 },
                 ]
