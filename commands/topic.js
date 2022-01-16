@@ -1,3 +1,4 @@
+const ow = require("./ow");
 
 const talkedRecently = new Set();
 module.exports = {
@@ -5,23 +6,23 @@ module.exports = {
     description: 'this is a topic command!',
     execute(client, message, args, Discord) {
         const messages = [
-            "#1 Which season do you like the most", 
-            "#2 Whats your favorite MCC?", 
-            "#3 What is your favorite moment of your life", 
+            "#1 Which season do you like the most",
+            "#2 Whats your favorite MCC?",
+            "#3 What is your favorite moment of your life",
             "#4 How do you wanna name your kid?",
-            "#5 What is something you really want to do in your life?", 
+            "#5 What is something you really want to do in your life?",
             "#6 Which country you would like to visit once?",
             "#7 Which subject do you hate and why?",
             "#8 How often are you awake after 01:00?",
-            "#9 Are you afraid of the dark?", 
+            "#9 Are you afraid of the dark?",
             "#10 Have you ever been in real danger?",
-            "#10 What do you do to relax? ", 
-            "#11 Who is the person that makes you the happiest?", 
+            "#10 What do you do to relax? ",
+            "#11 Who is the person that makes you the happiest?",
             "#12 If you're stressed, what is that one thing you do to relax?",
-            "#13 If you had too chance your name, what would it chance too?", 
-            "#14 What period in your life you want to do again?", 
+            "#13 If you had too chance your name, what would it chance too?",
+            "#14 What period in your life you want to do again?",
             "#15 Where do you spend the most time in your house?",
-            "#22 What is the weirdesst dream you ever had?", 
+            "#22 What is the weirdesst dream you ever had?",
             "#22 What is something you would like to chance about yourself?",
             "#23 Who has the most influence in your life?",
             "#24 What is the place you like the most?",
@@ -67,12 +68,18 @@ module.exports = {
             "#70 What is something your the proudest of?",
             "#71 Did your lifegoals change through the years?",
         ]
+        const promoMessages = [" ", `Hi, Thanks for using Theezakje, This is a reminder to report grammar and other mistakes at the [support server](https://discord.gg/xF7C3Cf37j) `, " "]
 
         if (talkedRecently.has(message.author.id)) {
             message.channel.send(`Calm down - ` + `${message.author}`);
         } else {
             const randomMessage = messages[Math.floor(Math.random() * messages.length)];
-            message.channel.send(randomMessage)
+            const PromoMessage = promoMessages[Math.floor(Math.random() * promoMessages.length)];
+            const embed = new Discord.MessageEmbed()
+            .setAuthor({ name: `${message.author.username}`, iconURL: `${message.author.displayAvatarURL()}`})
+            .setColor(`#1DAD1C`)
+            .setDescription(`${randomMessage}\n${PromoMessage}`)
+            message.channel.send({ embeds: [embed] });
 
             talkedRecently.add(message.author.id);
             setTimeout(() => {
