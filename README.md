@@ -1,2 +1,4 @@
 # Theezakje
-Please do not use this as a base for your code, this is my first Javascript project
+An chatbot for Discord written in Discord.js. Project can be considered finished, and will be an archive.
+
+This was my first JS project, so don't use this as a base for your code
